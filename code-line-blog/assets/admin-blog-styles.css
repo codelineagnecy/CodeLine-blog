@@ -1,0 +1,4 @@
+/* Admin styles for Code Line Blog meta box */
+.clb-label { display: block; margin-bottom: 8px; }
+.clb-fullinput { width: 100%; box-sizing: border-box; }
+.elementor-panel-alert-info--clb { margin:12px 0; padding:12px; border-radius:8px; }

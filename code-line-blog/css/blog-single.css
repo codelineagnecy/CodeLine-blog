@@ -1,0 +1,215 @@
+body.single-cl_blog_article .site-content .ast-container {
+    display: block !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.clb-single {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(26px, 3.2vw, 56px) clamp(16px, 4.2vw, 60px) clamp(28px, 4vw, 56px);
+}
+
+.clb-single-article {
+    background: transparent;
+    width: min(980px, 100% - 48px);
+    max-width: 980px;
+    margin: 0 auto !important;
+    text-align: left;
+}
+
+.clb-single-header {
+    margin-bottom: 0;
+}
+
+.clb-single-kickers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 0 12px;
+}
+
+.clb-single-kicker {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #777777;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.clb-single-kicker + .clb-single-kicker::before {
+    content: "-";
+    display: inline-block;
+    margin: 0 8px 0 6px;
+    color: #9a9a9a;
+    font-weight: 500;
+}
+
+.clb-single-title {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(32px, 3.5vw, 56px);
+    line-height: 1.03;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    max-width: none;
+    font-family: inherit;
+}
+
+.clb-single-summary {
+    color: #222222;
+    font-size: clamp(16px, 1.05vw, 21px);
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: none;
+    margin: 14px 0 28px !important;
+    font-family: "Satoshi", "Manrope", "Segoe UI", sans-serif;
+}
+
+.clb-single-summary p {
+    margin: 0;
+}
+
+.clb-single-author-block,
+.clb-single-updated,
+.clb-single-author-name,
+.clb-single-author-role {
+    display: none;
+}
+
+.clb-single-content {
+    color: #222222;
+    font-size: clamp(15px, 0.96vw, 17px);
+    line-height: 1.72;
+    max-width: none;
+    margin: 28px 0 0 !important;
+    font-family: "Satoshi", "Manrope", "Segoe UI", sans-serif;
+}
+
+.clb-single-content p {
+    margin: 0 0 1.2em;
+}
+
+.clb-single-content h2,
+.clb-single-content h3,
+.clb-single-content h4 {
+    margin: 1.65em 0 0.6em;
+    line-height: 1.2;
+    color: #111111;
+}
+
+.clb-single-bottom-image {
+    margin-top: 0;
+    background: transparent;
+    border-radius: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: min(980px, calc(100vw - 24px));
+    aspect-ratio: 16 / 7;
+    min-height: 0;
+    margin-left: 50% !important;
+    margin-right: 0 !important;
+    transform: translateX(-50%);
+}
+
+.clb-single-bottom-image::before {
+    display: none;
+}
+
+.clb-single-bottom-image img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.clb-single-bottom-image-photo {
+    padding: 0;
+}
+
+.clb-single-bottom-image-photo::before {
+    display: none;
+}
+
+.clb-single-bottom-image-photo img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.clb-single-bottom-image-logo img {
+    width: 100%;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .clb-single {
+        margin-top: 0;
+        padding: 20px 14px 28px;
+    }
+
+    .clb-single-article {
+        width: min(980px, 100% - 32px);
+    }
+
+    .clb-single-title {
+        font-size: clamp(26px, 7vw, 38px);
+    }
+
+    .clb-single-summary {
+        font-size: 17px;
+        line-height: 1.55;
+        margin-bottom: 16px;
+    }
+
+    .clb-single-content {
+        font-size: 15px;
+        line-height: 1.68;
+        margin-top: 20px;
+    }
+
+    .clb-single-bottom-image {
+        margin-top: 0;
+        width: min(980px, calc(100vw - 12px));
+        aspect-ratio: 16 / 9;
+    }
+
+    .clb-single-bottom-image img {
+        width: 100%;
+        max-height: none;
+    }
+
+    .clb-single-bottom-image-photo {
+        padding: 0;
+    }
+
+    .clb-single-bottom-image-photo img {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+    }
+
+    .clb-single-bottom-image-logo img {
+        width: 100%;
+        max-height: none;
+    }
+}
